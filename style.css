@@ -1,0 +1,30 @@
+/* import google font  */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+
+.main .issue{
+    background-color: #EFF1FF;
+}
+.main .issue .adding .rounded-3{
+    background-color: #2F2B73;
+    color: white;
+}
+.main .issue .search .search-items img{
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.main .issue .search .filter {
+    background-color: white;
+}
+.dropdown-menu.show{
+    left: -15px !important;
+    top: 12px!important;
+}
