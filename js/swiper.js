@@ -12,11 +12,9 @@ let swiperOptions = {
             const maxPagesToShow = 5; // عدد الأرقام التي ستظهر في الباجنيشن
             let paginationHTML = '';
 
-            // حساب أول رقم يجب أن يظهر في الباجنيشن
             let start = current - Math.floor(maxPagesToShow / 2);
             let end = current + Math.floor(maxPagesToShow / 2);
 
-            // التأكد من أن الأرقام لا تتجاوز الحدود
             if (start < 1) {
                 start = 1;
                 end = Math.min(total, maxPagesToShow);

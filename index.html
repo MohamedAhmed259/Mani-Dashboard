@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- external css file  -->
     <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="style.css">
     <title>Dashboard</title>
 </head>
@@ -101,8 +102,9 @@
                     <div class="d-flex gap-4">
                         <div class="adding d-flex align-items-center w-25 rounded-3 ">
                             <div class=" rounded-3 px-3">
-                                <button class="bttn p-2  border-0 rounded-3">
-                                    إضافة قضية جديد
+                                <!-- Button trigger modal -->
+                                <button class="bttn p-2  border-0 rounded-3"type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    إضافة قضية جديدة
                                     <img src="./img/Add_round.svg" alt="add">
                                 </button>
                             </div>
@@ -112,17 +114,19 @@
                                 <input type="text" class="w-100 p-2 rounded-3 border-0 " id="search-input" placeholder="بحث برقم القضية أو اسم العميل">
                                 <img src="./img/search.svg" class="position-absolute" alt="search">
                             </div>
-                            <div class="filter d-flex align-items-center justify-content-center gap-2 w-25 m-2 rounded-3  ">
+                            <div class="filter d-flex align-items-center justify-content-center gap-2 w-25 my-2 rounded-3  ">
                                 <img src="./img/Filter.svg" class="p-2" alt="filter">
-                                <a class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        تصفية
+                                <div class="position-relative">
+                                    <a class="nav-item dropdown ">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            تصفية
+                                        </a>
+                                        <ul class="dropdown-menu position-absolute start -0">
+                                            <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                        </ul>
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                        <li><a class="dropdown-item" href="#">حذف</a></li>
-                                    </ul>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -131,7 +135,7 @@
                     <div class="line mb-3 mt-1" style="height: 1px; background-color: #D4D3F2;"></div>
                 </div>
                 <div class="container">
-                    <div class=" swiper">
+                    <div class=" swiper" >
                         <div class="card-wrapper position-relative">
                             <ul class="card-list swiper-wrapper">
                                 <li class="card-item swiper-slide">
@@ -145,7 +149,7 @@
                                                     <img src="./img/User_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    رقم الهوية: 1023456789
+                                                    رقم الهوية: <span>1023456789</span>
                                                 </p>
                                             </div>
                                             <div class="d-flex mb-2">
@@ -153,7 +157,7 @@
                                                     <img src="./img/Folder_line_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    نـوع الدعـوة: جنائية
+                                                    نـوع الدعـوة: <span>جنائية</span>
                                                 </p>
                                             </div>
                                             <div class="d-flex mb-2">
@@ -161,7 +165,7 @@
                                                     <img src="./img/File_dock_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    وصف مختصر للقضية: قضيـة سـرقة تتعـلـق بالمتهم بسرقة متجر إلكترونيات، تشمل القضية اتهامات بحيازة ممتلكات مسروقة والتسبب في ضرر للمتجر.
+                                                وصف مختصر للقضية: <span>قضيـة سـرقة تتعـلـق بالمتهم بسرقة متجر إلكترونيات، تشمل القضية اتهامات بحيازة ممتلكات مسروقة والتسبب في ضرر للمتجر.</span>
                                                 </p>
                                             </div>
                                             <div class="d-flex mb-2">
@@ -180,15 +184,15 @@
                                                     <img src="./img/Date_range_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    التاريخ التالي للجلسة: 15/3/2025
+                                                    التاريخ التالي للجلسة: <span>15/3/2025</span>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="px-3 mb-3">
                                             <div style="height: 1px ; background-color: #9E9EA3;"></div>
                                         </div>
-                                        <div class="show px-3 rounded-3 mb-2">
-                                            <button class="w-100 px4 py-2 rounded-3 ">
+                                        <div class="shw px-3 rounded-3 mb-2">
+                                            <button class="w-100 px-4 py-2 rounded-3 ">
                                                 <a href="" class="text-decoration-none">عرض ملف الشركة</a>
                                             </button>
                                         </div>
@@ -205,7 +209,7 @@
                                                     <img src="./img/User_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    رقم الهوية: 1023456789
+                                                    رقم الهوية: <span>1023456789</span>
                                                 </p>
                                             </div>
                                             <div class="d-flex mb-2">
@@ -213,7 +217,7 @@
                                                     <img src="./img/Folder_line_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    نـوع الدعـوة: جنائية
+                                                    نـوع الدعـوة: <span>جنائية</span>
                                                 </p>
                                             </div>
                                             <div class="d-flex mb-2">
@@ -221,7 +225,7 @@
                                                     <img src="./img/File_dock_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    وصف مختصر للقضية: قضيـة سـرقة تتعـلـق بالمتهم بسرقة متجر إلكترونيات، تشمل القضية اتهامات بحيازة ممتلكات مسروقة والتسبب في ضرر للمتجر.
+                                                وصف مختصر للقضية: <span>قضيـة سـرقة تتعـلـق بالمتهم بسرقة متجر إلكترونيات، تشمل القضية اتهامات بحيازة ممتلكات مسروقة والتسبب في ضرر للمتجر.</span>
                                                 </p>
                                             </div>
                                             <div class="d-flex mb-2">
@@ -231,7 +235,7 @@
                                                 <p class="mb-0">
                                                     حالة القضية:
                                                     <div class="status">
-                                                        <span class="span-2"><i class="fa-regular fa-circle-check"></i></span>محالة للتنفيذ
+                                                        <span class="span-2"><i class="fa-regular fa-circle-check"></i></span>قيد التنفيذ
                                                     </div>
                                                 </p>
                                             </div>
@@ -240,15 +244,15 @@
                                                     <img src="./img/Date_range_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    التاريخ التالي للجلسة: 15/3/2025
+                                                    التاريخ التالي للجلسة: <span>15/3/2025</span>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="px-3 mb-3">
                                             <div style="height: 1px ; background-color: #9E9EA3;"></div>
                                         </div>
-                                        <div class="show px-3 rounded-3 mb-2">
-                                            <button class="w-100 px4 py-2 rounded-3 ">
+                                        <div class="shw px-3 rounded-3 mb-2">
+                                            <button class="w-100 px-4 py-2 rounded-3 ">
                                                 <a href="" class="text-decoration-none">عرض ملف الشركة</a>
                                             </button>
                                         </div>
@@ -265,7 +269,7 @@
                                                     <img src="./img/User_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    رقم الهوية: 1023456789
+                                                    رقم الهوية: <span>1023456789</span>
                                                 </p>
                                             </div>
                                             <div class="d-flex mb-2">
@@ -273,7 +277,7 @@
                                                     <img src="./img/Folder_line_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    نـوع الدعـوة: جنائية
+                                                    نـوع الدعـوة: <span>جنائية</span>
                                                 </p>
                                             </div>
                                             <div class="d-flex mb-2">
@@ -281,7 +285,7 @@
                                                     <img src="./img/File_dock_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    وصف مختصر للقضية: قضيـة سـرقة تتعـلـق بالمتهم بسرقة متجر إلكترونيات، تشمل القضية اتهامات بحيازة ممتلكات مسروقة والتسبب في ضرر للمتجر.
+                                                وصف مختصر للقضية: <span>قضيـة سـرقة تتعـلـق بالمتهم بسرقة متجر إلكترونيات، تشمل القضية اتهامات بحيازة ممتلكات مسروقة والتسبب في ضرر للمتجر.</span>
                                                 </p>
                                             </div>
                                             <div class="d-flex mb-2">
@@ -291,7 +295,7 @@
                                                 <p class="mb-0">
                                                     حالة القضية:
                                                     <div class="status">
-                                                        <span class="span-3"><i class="fa-regular fa-circle-check"></i></span>أرشيف 
+                                                        <span class="span-3"><i class="fa-regular fa-circle-check"></i></span>قيد التنفيذ
                                                     </div>
                                                 </p>
                                             </div>
@@ -300,15 +304,15 @@
                                                     <img src="./img/Date_range_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    التاريخ التالي للجلسة: 15/3/2025
+                                                    التاريخ التالي للجلسة: <span>15/3/2025</span>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="px-3 mb-3">
                                             <div style="height: 1px ; background-color: #9E9EA3;"></div>
                                         </div>
-                                        <div class="show px-3 rounded-3 mb-2">
-                                            <button class="w-100 px4 py-2 rounded-3 ">
+                                        <div class="shw px-3 rounded-3 mb-2">
+                                            <button class="w-100 px-4 py-2 rounded-3 ">
                                                 <a href="" class="text-decoration-none">عرض ملف الشركة</a>
                                             </button>
                                         </div>
@@ -325,7 +329,7 @@
                                                     <img src="./img/User_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    رقم الهوية: 1023456789
+                                                    رقم الهوية: <span>1023456789</span>
                                                 </p>
                                             </div>
                                             <div class="d-flex mb-2">
@@ -333,7 +337,7 @@
                                                     <img src="./img/Folder_line_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    نـوع الدعـوة: جنائية
+                                                    نـوع الدعـوة: <span>جنائية</span>
                                                 </p>
                                             </div>
                                             <div class="d-flex mb-2">
@@ -341,7 +345,7 @@
                                                     <img src="./img/File_dock_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    وصف مختصر للقضية: قضيـة سـرقة تتعـلـق بالمتهم بسرقة متجر إلكترونيات، تشمل القضية اتهامات بحيازة ممتلكات مسروقة والتسبب في ضرر للمتجر.
+                                                وصف مختصر للقضية: <span>قضيـة سـرقة تتعـلـق بالمتهم بسرقة متجر إلكترونيات، تشمل القضية اتهامات بحيازة ممتلكات مسروقة والتسبب في ضرر للمتجر.</span>
                                                 </p>
                                             </div>
                                             <div class="d-flex mb-2">
@@ -349,7 +353,10 @@
                                                     <img src="./img/Hourglass_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    حالة القضية: <span class="span-1"><i class="fa-regular fa-circle-check"></i></span> قيد التنفيذ
+                                                    حالة القضية:
+                                                    <div class="status">
+                                                        <span class="span-1"><i class="fa-regular fa-circle-check"></i></span>قيد التنفيذ
+                                                    </div>
                                                 </p>
                                             </div>
                                             <div class="d-flex mb-2">
@@ -357,15 +364,15 @@
                                                     <img src="./img/Date_range_light.svg" alt="">
                                                 </div>
                                                 <p class="mb-0">
-                                                    التاريخ التالي للجلسة: 15/3/2025
+                                                    التاريخ التالي للجلسة: <span>15/3/2025</span>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="px-3 mb-3">
                                             <div style="height: 1px ; background-color: #9E9EA3;"></div>
                                         </div>
-                                        <div class="show px-3 rounded-3 mb-2">
-                                            <button class="w-100 px4 py-2 rounded-3 ">
+                                        <div class="shw px-3 rounded-3 mb-2">
+                                            <button class="w-100 px-4 py-2 rounded-3 ">
                                                 <a href="" class="text-decoration-none">عرض ملف الشركة</a>
                                             </button>
                                         </div>
@@ -382,6 +389,81 @@
                 </div>
             </section>
             <!-- end issue  -->
+            <section class="container">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">إضافة قضية جديدة</h1>
+                        <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body pb-0">
+                            <article class="card-link rounded-3  ">
+                                <div class="card-link-top-1  d-flex align-items-center justify-content-center rounded-top  mb-2 ">
+                                    <p class="mb-0">القضية رقم </p>
+                                    <input type="text" class="me-2 rounded-3 border-1" placeholder="#00000" required>
+                                </div>
+                                <div class="d-flex flex-column px-3 mb-2">
+                                    <div class="d-flex mb-2">
+                                        <div>
+                                            <img src="./img/User_light.svg" alt="">
+                                        </div>
+                                        <p class="mb-0 w-100">
+                                            رقم الهوية: <br>
+                                            <input type="text" class="w-100 rounded-3 border-1" placeholder="#00000" required>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div>
+                                            <img src="./img/Folder_line_light.svg" alt="">
+                                        </div>
+                                        <p class="mb-0 w-100">
+                                            نـوع الدعـوة:
+                                            <input type="text" class="w-100  rounded-3 border-1" placeholder="#00000" required>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div>
+                                            <img src="./img/File_dock_light.svg" alt="">
+                                        </div>
+                                        <p class="mb-0 w-100">
+                                        وصف مختصر للقضية: <br>
+                                        <input type="text" class="w-100 rounded-3 border-1" placeholder="#00000" required>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div>
+                                            <img src="./img/Hourglass_light.svg" alt="">
+                                        </div>
+                                        <p class="mb-0">
+                                            حالة القضية:  <br>
+                                            <div class="status">
+                                                <span class="span-1"> <i class="fa-regular fa-circle-check"></i> </span> قيد التنفيذ 
+                                            </div>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div>
+                                            <img src="./img/Date_range_light.svg" alt="">
+                                        </div>
+                                        <p class="mb-0 w-100">
+                                            التاريخ التالي للجلسة: <br>
+                                            <input type="text" class="w-100 rounded-3 border-1" placeholder="**/**/****" required>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </article>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">خروج</button>
+                        <button type="button" class="btn btn-success">حفظ التغيرات</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <!-- bootstrap cdn -->
