@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>استفسارات العملاء</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        .main-content {
+            background-color: #f3f4f6;
+        }
+        .custom-input {
+            border-radius: 8px;
+            border: 1px solid #C2C1E7;
+            background: var(--bg-color, #FDFDFF);
+        }
+        .reply-btn {
+            border-radius: 8px;
+            background: var(--primary-Color, #2F2B73);
+            width: 150px;
+            height: 48px;
+            color: #fff;
+            border: none;
+        }
+        .reply-btn:hover {
+    background: #272568; 
+    color: #fff; 
+}
+        .del-btn {
+            border-radius: 8px;
+        background: #fff; 
+        border: 1px solid #56565E; 
+        width: 125px;
+        height: 48px;
+        color: #56565E; 
+        }
+        .del-btn:hover{
+            background: #F8D2D2; 
+            color: #000; 
+        }
+        
+
+    </style>
+</head>
+<body class="bg-light d-flex">
+    <div class="container-fluid  justify-content-center">
+        <div class="row justify-content-center">
+            <!-- Main Content -->
+            <div class="col-lg-10 col-md-9 main-content p-4 ">
+                <div class="row g-4">
+                    <!-- Inquiry Card -->
+                    <div class="col-md-6">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label class="form-label text-secondary">الاسم</label>
+                                    <input type="text" class="form-control" value="عبد الرحمن مصطفى">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-secondary">رقم الجوال</label>
+                                    <input type="text" class="form-control" value="+966 10 900 1110">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-secondary">البريد الإلكتروني</label>
+                                    <input type="email" class="form-control" value="abdelrahman3@gmail.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-secondary">الموضوع</label>
+                                    <input type="text" class="form-control" value="استفسار عن قضية إدارية">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-secondary">شرح الموضوع</label>
+                                    <textarea class="form-control mb-5" rows="4">مرحبا، أحتاج لاستشارة قانونية بخصوص قضية إدارية تتعلق بالطعن على قرار إداري صادر من جهة حكومية. هل يمكنكم مساعدتي في هذا النوع من القضايا؟ وما هي الخطوات المطلوبة لتقديم الدعوى؟ وأود معرفة التكلفة المتوقعة لخدماتكم القانونية.</textarea>
+                                </div>
+                                <div class="d-flex justify-content-between ">
+                                    <button class="btn reply-btn">رد</button>
+                                    <button class="btn del-btn">حذف</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Duplicate Inquiry Card -->
+                    <div class="col-md-6">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label class="form-label text-secondary">الاسم</label>
+                                    <input type="text" class="form-control" value="عبد الرحمن مصطفى">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-secondary">رقم الجوال</label>
+                                    <input type="text" class="form-control" value="+966 10 900 1110">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-secondary">البريد الإلكتروني</label>
+                                    <input type="email" class="form-control" value="abdelrahman3@gmail.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-secondary">الموضوع</label>
+                                    <input type="text" class="form-control" value="استفسار عن قضية إدارية">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-secondary">شرح الموضوع</label>
+                                    <textarea class="form-control mb-5" rows="4">مرحبا، أحتاج لاستشارة قانونية بخصوص قضية إدارية تتعلق بالطعن على قرار إداري صادر من جهة حكومية. هل يمكنكم مساعدتي في هذا النوع من القضايا؟ وما هي الخطوات المطلوبة لتقديم الدعوى؟ وأود معرفة التكلفة المتوقعة لخدماتكم القانونية.</textarea>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn reply-btn">رد</button>
+                                    <button class="btn del-btn">حذف</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-sYN1wm15yFNbw5UUplf2B7TCfAKK5Z7m/nz+y4k9g0PUjvZ2z3KDH4j5uq9BTMGX" crossorigin="anonymous"></script>
+</body>
+</html>
