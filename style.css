@@ -19,7 +19,14 @@
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    
+}
+.main .issue .search .search-items .txt{
+    font-size: 16px;
+    font-weight: 400;
+    color: #56565E;
+}
+.main .issue .search .search-items .txt:focus{
+    outline: 0;
 }
 .main .issue .search .filter {
     background-color: white;
