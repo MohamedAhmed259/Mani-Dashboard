@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.swiper', {
-        slidesPerView: 4, // عرض عمودين
+        slidesPerView: 3, // عرض عمودين
         grid: {
             rows: 2, // صفين
             fill: 'column', // تعبئة العناصر بشكل أعمدة

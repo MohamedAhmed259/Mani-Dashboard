@@ -8,7 +8,7 @@
 }
 .main .issue{
     background-color: #EFF1FF;
-    height: 89.5vh;
+    height: 100vh;
 }
 .main .issue .adding .rounded-3{
     background-color: #2F2B73;
@@ -30,7 +30,7 @@
 /* swiper  */
 .swiper {
     width: 90%;
-    height: 600px;
+    height: 690px;
     margin: auto;
 }
 .swiper-slide {
@@ -39,8 +39,42 @@
     justify-content: center;
     background-color: #FFFFFF;
     box-shadow: 0px 2px 8px 0px #14123A17;
-    height: 216px !important; 
+    height: 246px !important; 
+    width: 365px !important;
 }
+.swiper-slide .card-link .title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #2F2B73;
+}
+.dropdown-toggle::after{
+    display: none;
+    outline: none;
+    border: none;
+}
+.dropdown-toggle:focus{
+    outline: none;
+}
+.dropdown-menu.show{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 135px;
+    height: 102px;
+    background: #EFF1FF;
+    font-size: 16px;
+    font-weight: 400;
+    right: -90px !important;
+}
+
+.swiper-slide .card-link .lawyer{
+    font-size: 16px;
+    font-weight: 400;
+    color: #14123A;
+}
+
+/* old  */
 
 .swiper-pagination-bullet {
     
