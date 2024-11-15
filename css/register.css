@@ -6,7 +6,10 @@
     box-sizing: border-box;
     font-family: "Tajawal", sans-serif;
 }
-
+.main .issue{
+    background-color: #EFF1FF;
+   
+}
 .content .form{
     width: 632px;
     background: #ECECF7;

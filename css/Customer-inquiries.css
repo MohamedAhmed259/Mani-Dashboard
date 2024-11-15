@@ -150,3 +150,19 @@
         display: none;
     }
 }
+/* model  */
+.modal-body textarea{
+    height: 152px;
+font-size: 16px;
+font-weight: 400;
+
+}
+.modal-footer .adding{
+    background-color: #2F2B73;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 185px;
+    font-size: 16px;
+    font-weight: 500;
+}

@@ -36,5 +36,9 @@
     right: -70px !important;
     top: 12px!important;
     /* transform: translate(-1100px, 114px)!important; */
-
+}
+.dropdown-item{
+    font-size: 16px;
+    color: #14123A;
+    font-weight: 400;
 }

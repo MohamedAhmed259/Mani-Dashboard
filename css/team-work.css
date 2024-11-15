@@ -166,3 +166,42 @@
     position: absolute;
 }
 /* swiper  */
+/* model  */
+.modal-body input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+    color: #56565E;
+}
+.modal-body input:focus{
+    box-shadow: none;
+    outline: none;
+}
+.modal-body #job-role{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+    color: #56565E;
+}
+.modal-body #job-role:focus{
+    box-shadow: none;
+    outline: none;
+}
+.modal-footer .adding{
+    background-color: #2F2B73;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 185px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.modal-footer .del{
+    background-color: white;
+    color: #14123A;
+    border: 1px solid #2F2B73;
+    cursor: pointer;
+    width: 80px;
+    font-size: 16px;
+    font-weight: 500;
+}

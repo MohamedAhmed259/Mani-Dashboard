@@ -150,6 +150,7 @@
                                     </div>
                                     <div class="list d-flex mb-2">
                                         <p class="mb-0">
+                                            
                                             <ul class="m-0 p-0">
                                                 <li class="me-1">ماجستير من المعهد العالي للقضاء</li>
                                                 <li class="me-1">تملك خبرة تتجاوز 8 سنوات في مجال البحث والاستشارات القانونية</li>
@@ -623,41 +624,25 @@
                                 <div class="d-flex flex-column px-3 mb-2">
                                     <div class="d-flex mb-2">
                                         <p class="mb-0 w-100">
-                                            اسم الموظف: <br>
-                                            <input type="text" class="w-100 rounded-3 border-1" placeholder="#00000" required>
+                                            <input type="text" class="w-75 rounded-3 border-1" placeholder="اسم الموظف" required>
                                         </p>
                                     </div>
                                     <div class="d-flex mb-2">
                                         <p class="mb-0 w-100">
-                                            المهنة:
-                                            <input type="text" class="w-100  rounded-3 border-1" placeholder="#00000" required>
-                                        </p>
-                                    </div>
-                                    <div class="d-flex mb-2">
-                                        <p class="mb-0 w-100">
-                                            الخبرات 1: <br>
-                                        <input type="text" class="w-100 rounded-3 border-1" placeholder="#00000" required>
-                                        </p>
-                                    </div>
-                                    <div class="d-flex mb-2">
-                                        <p class="mb-0 w-100">
-                                            الخبرات 2:<br>
-                                        <input type="text" class="w-100 rounded-3 border-1" placeholder="#00000" required>
-                                        </p>
-                                    </div>
-                                    <div class="d-flex mb-2">
-                                        <p class="mb-0 w-100">
-                                            الخبرات 3:<br>
-                                            <input type="text" class="w-100 rounded-3 border-1" placeholder="#000000" required>
+                                            <select id="job-role" class=" w-75 ">
+                                                <option value="" disabled selected>اختر الدور الوظيفي</option>
+                                                <option value="lawyer">محامي</option>
+                                                <option value="consultant">مستشار قانوني</option>
+                                            </select>
                                         </p>
                                     </div>
                                 </div>
                                 
                             </article>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">خروج</button>
-                        <button type="button" class="btn btn-success">حفظ التغيرات</button>
+                        <div class="modal-footer justify-content-start gap-3">
+                            <button type="button" class="py-2 px-4 rounded-3 adding">إضافة</button>
+                            <button type="button" class="py-2 px-4 rounded del" data-bs-dismiss="modal">إلغاء</button>
                         </div>
                     </div>
                     </div>
