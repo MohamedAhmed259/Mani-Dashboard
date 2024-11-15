@@ -8,12 +8,12 @@
 }
 .main .issue{
     background-color: #EFF1FF;
-   
 }
 .content .form{
     width: 632px;
-    background: #ECECF7;
     border-radius: 20px;
+    width: 547px;
+    border: 1px solid #5958B5;
 }
 .content .form h2{
     font-size: 31px;
@@ -26,10 +26,17 @@
     color: white;
     border: none;
 }
+.content .form .position-relative i{
+    color: #797982;
+}
 .content .form .position-relative input{
     border: none;
+    color: #14123A;
 }
-.content .form .position-relative .fa-user{
+.content .form .position-relative input:focus{
+    outline: none;
+}
+.content .form .position-relative .fa-solid{
     transform: translate(24px, -50%);
 }
 .content .form .position-relative .fa-eye-slash{
