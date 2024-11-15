@@ -45,7 +45,7 @@ let swiperOptions = {
             slidesPerView: 2,
         },
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 2,
         }
     }
 };
