@@ -30,6 +30,16 @@
     font-family: 500;
     color: #565656;
 }
+.card-list .card-item article .form-control{
+    font-size: 16px;
+    font-family: 400;
+    color: #14123A;
+}
+.card-list .card-item article .form-control:focus{
+    outline: none;
+    border: 1px solid #565656;
+    box-shadow: none;
+}
 /* باقي المدخلات inputs  */
 .card-list .card-item article .reply-btn{
     font-size: 16px;

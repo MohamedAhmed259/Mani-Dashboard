@@ -39,9 +39,30 @@
     justify-content: center;
     background-color: #FFFFFF;
     box-shadow: 0px 2px 8px 0px #14123A17;
-    height: 216px !important; 
+    height: 205px !important; 
 }
-
+.swiper-slide .card-link{
+    width: 100%;
+}
+.swiper-slide .card-link p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #56565E;
+}
+.swiper-slide .card-link p span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #14123A;
+}
+.swiper-slide .card-link .fa-trash-can{
+    font-size: 16px;
+    font-weight: 400;
+    color: #56565E;
+}
+.swiper-slide .card-link .fa-trash-can:hover{
+    scale: 1.1;
+    color: red;
+}
 .swiper-pagination-bullet {
     
     padding: 1px;
